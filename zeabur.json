@@ -1,0 +1,15 @@
+{
+  "name": "ai-study-advisor-database",
+  "type": "python",
+  "build": {
+    "builder": "nixpacks"
+  },
+  "deploy": {
+    "startCommand": "python app.py",
+    "restartPolicyType": "always",
+    "restartPolicyMaxRetries": 10
+  },
+  "env": {
+    "PORT": "5000"
+  }
+}
